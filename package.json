@@ -1,6 +1,6 @@
 {
   "name": "fastify-inject-with-session",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This library automates the client cookie management for testing with Fastify injection API based on tough-cookie.",
   "module": "./out/esm/index.js",
   "main": "./out/cjs/index.js",

@@ -1,4 +1,4 @@
-import {type FastifyInstance, type InjectOptions} from 'fastify';
+import {type FastifyInstance, type InjectOptions, type LightMyRequestResponse} from 'fastify';
 import {Cookie, CookieJar} from 'tough-cookie';
 
 export const useInjectWithSession = (namespace = 'test.example.org') => {
@@ -32,7 +32,7 @@ export const useInjectWithSession = (namespace = 'test.example.org') => {
 
 		opts.headers.cookie = cookieHeader;
 
-		const response = await fastify.inject(opts);
+		const response: LightMyRequestResponse = await fastify.inject(opts);
 
 		if (typeof response.headers['set-cookie'] === 'string') {
 			const cookie = Cookie.parse(response.headers['set-cookie']);
