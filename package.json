@@ -17,6 +17,10 @@
   "keywords": [],
   "author": "HoJeong Go <seia@outlook.kr>",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seia-soto/fastify-inject-with-session"
+  },
   "devDependencies": {
     "@fastify/cookie": "^8.3.0",
     "@types/node": "^18.15.11",
