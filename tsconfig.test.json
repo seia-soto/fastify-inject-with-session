@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-test",
+    "target": "es2018",
+    "module": "CommonJS"
+  },
+  "include": [
+    "./src",
+    "./test"
+  ],
+  "exclude": [
+    "./node_modules",
+    "./out",
+    "./out-test"
+  ]
+}

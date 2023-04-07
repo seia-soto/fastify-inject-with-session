@@ -1,0 +1,15 @@
+#!/bin/bash
+pnpm tsc -p tsconfig.build-esm.json
+pnpm tsc -p tsconfig.build-cjs.json
+
+cat >./out/cjs/package.json <<!EOF
+{
+  "type": "commonjs"
+}
+!EOF
+
+cat >./out/esm/package.json <<!EOF
+{
+  "type": "module"
+}
+!EOF
